@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Prom Audio</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1dd1a1;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #10ac84;
+    }
+  </style>
+</head>
+<body>
+  <button id="playBtn">Play Musik</button>
+
+  <audio id="myAudio" src="desah.mp3"></audio>
+
+  <script>
+    const audio = document.getElementById('myAudio');
+    const btn = document.getElementById('playBtn');
+
+    btn.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
+</body>
+</html>
